@@ -8,7 +8,7 @@ The comparison below shows the source footage beside the TensorRT detections. Th
 
 ![Original footage and RT-DETRv4 detections side by side](assets/demo-comparison.gif)
 
-Source footage: [“Formula Student Germany Driverless Skidpad” by KA-RaceIng e.V.](https://www.youtube.com/watch?v=Fs6a0Aqu4YA), used with permission. The [original clip](videos/Formula%20Student%20Germany%20Driverless%20Skidpad.mp4) is included for a reproducible comparison.
+Source footage: [“Formula Student Germany Driverless Skidpad” by KA-RaceIng e.V.](https://www.youtube.com/watch?v=Fs6a0Aqu4YA).
 
 ## Results
 
@@ -117,4 +117,4 @@ videos/                                     # Source demo clip
 
 This project's original code is licensed under the [MIT License](LICENSE). Vendored RT-DETRv4 code is covered by its [upstream Apache-2.0 license](RT-DETRv4/LICENSE); DINOv3 materials are subject to Meta's [DINOv3 license](RT-DETRv4/dinov3/LICENSE.md). Those third-party terms remain in effect for their respective materials.
 
-The demo footage is by KA-RaceIng e.V.; see the [original YouTube video](https://www.youtube.com/watch?v=Fs6a0Aqu4YA).
+
