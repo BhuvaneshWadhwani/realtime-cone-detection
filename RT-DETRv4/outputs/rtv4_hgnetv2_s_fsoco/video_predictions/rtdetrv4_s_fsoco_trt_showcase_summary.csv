@@ -1,0 +1,2 @@
+run_name,engine,video,output_video,frames_processed,video_fps,video_duration_seconds,total_elapsed_seconds,infer_seconds_per_frame,infer_fps,effective_fps,conf,device
+rtdetrv4_s_fsoco_trt,RT-DETRv4/outputs/rtv4_hgnetv2_s_fsoco/best_stg2_fp16.trt,videos/Formula Student Germany Driverless Skidpad.mp4,RT-DETRv4/outputs/rtv4_hgnetv2_s_fsoco/video_predictions/rtdetrv4_s_fsoco_trt_skidpad_showcase.mp4,2825,59.94005994005994,47.13041666666667,51.7552547454834,0.007049088592208555,141.86231126465233,54.583829485382516,0.4,cuda

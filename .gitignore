@@ -1,0 +1,101 @@
+# =============================================================================
+# Real Time Detection Transformer — Bodensee Racing Team
+# .gitignore
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Python environments
+# ---------------------------------------------------------------------------
+venv/
+venv_linux/
+.venv/
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+*.egg-info/
+dist/
+build/
+
+# ---------------------------------------------------------------------------
+# VS Code / Jupyter
+# ---------------------------------------------------------------------------
+.vscode/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Dataset (stored separately)
+# ---------------------------------------------------------------------------
+data/
+
+# ---------------------------------------------------------------------------
+# Pretrained backbone weights
+# ---------------------------------------------------------------------------
+RT-DETRv4/data/pretrain/
+
+# ---------------------------------------------------------------------------
+# Training checkpoints (keep only final best models)
+# ---------------------------------------------------------------------------
+RT-DETRv4/outputs/**/checkpoint*.pth
+RT-DETRv4/outputs/**/last.pth
+
+# Keep final best weights
+!RT-DETRv4/outputs/rtv4_hgnetv2_s_fsoco/best_stg2.pth
+
+# ---------------------------------------------------------------------------
+# TensorRT engines (hardware / TensorRT version specific)
+# Rebuild from ONNX on target machine
+# ---------------------------------------------------------------------------
+RT-DETRv4/outputs/**/*.trt
+RT-DETRv4/outputs/**/*.engine
+!RT-DETRv4/outputs/rtv4_hgnetv2_s_fsoco/best_stg2_fp16.trt
+
+# ---------------------------------------------------------------------------
+# Training artifacts
+# ---------------------------------------------------------------------------
+RT-DETRv4/outputs/**/summary/
+RT-DETRv4/outputs/**/test/
+RT-DETRv4/outputs/**/report_examples/
+RT-DETRv4/outputs/**/report_plots/
+
+# Prediction videos
+RT-DETRv4/outputs/**/video_predictions/*.mp4
+!RT-DETRv4/outputs/rtv4_hgnetv2_s_fsoco/video_predictions/rtdetrv4_s_fsoco_trt_skidpad_showcase.mp4
+
+# Keep benchmark CSVs
+!RT-DETRv4/outputs/**/*.csv
+
+# ---------------------------------------------------------------------------
+# Local videos
+# ---------------------------------------------------------------------------
+
+
+# ---------------------------------------------------------------------------
+# Logs and temporary files
+# ---------------------------------------------------------------------------
+*.log
+*.tmp
+
+# ---------------------------------------------------------------------------
+# OS files
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Local helper files
+# ---------------------------------------------------------------------------
+local_check.ps1
+repo_structure.txt
+
+
+RT-DETRv4/outputs/**/predictions*/
+RT-DETRv4/outputs/**/eval/
+RT-DETRv4/outputs/**/eval.pth
+RT-DETRv4/pretrain/
+RT-DETRv4/data/pretrain/
+RT-DETRv4/logs/
+RT-DETRv4/outputs/**/log.txt
